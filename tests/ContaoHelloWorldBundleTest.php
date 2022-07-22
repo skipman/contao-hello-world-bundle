@@ -15,7 +15,7 @@ namespace Skipman\ContaoHelloWorldBundle\Tests;
 use Skipman\ContaoHelloWorldBundle\ContaoHelloWorldBundle;
 use PHPUnit\Framework\TestCase;
 
-class ContaoSkeletonBundleTest extends TestCase
+class ContaoHelloWorldBundleTest extends TestCase
 {
     public function testCanBeInstantiated(): void
     {

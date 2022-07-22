@@ -59,5 +59,12 @@
         "ecs": "@php tools/ecs/vendor/bin/ecs check src tests --config ecs.php --fix --ansi",
         "phpstan": "@php tools/phpstan/vendor/bin/phpstan analyze --ansi",
         "unit-tests": "@php vendor/bin/phpunit --colors=always"
+    },
+    "config": {
+        "allow-plugins": {
+            "bamarni/composer-bin-plugin": true,
+            "contao-components/installer": true,
+            "contao/manager-plugin": true
+        }
     }
 }
