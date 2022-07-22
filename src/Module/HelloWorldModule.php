@@ -2,6 +2,7 @@
 
 namespace Skipman\ContaoHelloWorldBundle\Module;
 
+use Skipman\ContaoHelloWorldBundle\Library\MessageGenerator;
 class HelloWorldModule extends \Module
 {
     /**
@@ -36,6 +37,10 @@ class HelloWorldModule extends \Module
      */
     protected function compile()
     {
-        $this->Template->message = 'Hello World';
+        $messageGenerator = \Contao\System::getContainer()->get(MessageGenerator::class);
+
+        $message = $messageGenerator->sayHelloTo('World');
+
+        $this->Template->message = $message;
     }
 }
